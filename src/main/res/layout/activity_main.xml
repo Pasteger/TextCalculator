@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/exceptionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/standard_background"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/text"
+        android:textSize="50sp" />
+
+    <EditText
+        android:id="@+id/fistNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/standard_background"
+        android:hint="@string/firstNumber"
+        android:inputType="textImeMultiLine"
+        android:textColor="@color/text"
+        android:textColorHint="@color/text"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toRightOf="@+id/firstNumLabel"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextFields"
+        android:autofillHints="0" />
+
+    <EditText
+        android:id="@+id/secondNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/standard_background"
+        android:textColorHint="@color/text"
+        android:textColor="@color/text"
+        android:textSize="30sp"
+        android:inputType="textImeMultiLine"
+        android:hint="@string/secondNumber"
+        app:layout_constraintLeft_toRightOf="@+id/firstNumLabel"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextFields"
+        android:autofillHints="0" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:backgroundTint="@color/standard_background"
+        android:text="@string/add"
+        android:textColor="@color/text"
+        android:onClick="add"
+        android:textSize="50sp"
+        tools:ignore="UsingOnClickInXml" />
+
+</LinearLayout>
